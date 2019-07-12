@@ -61,7 +61,7 @@ public class Cards {
     public static int sumPlayerTotal(int[] items) {
         int total = 0;
         for (int i = 0; i < items.length; i++) {
-            total = total + items[i];
+            total = total + getCardValue(items[i]);
         }
         return total;
     }
